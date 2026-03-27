@@ -1,13 +1,26 @@
 @echo off
-echo Compiling...
-gcc main.c -o main.exe -I"C:\Users\HP\Downloads\SDL3-devel-3.4.2-mingw\SDL3-3.4.2\i686-w64-mingw32\include" -L"C:\Users\HP\Downloads\SDL3-devel-3.4.2-mingw\SDL3-3.4.2\i686-w64-mingw32\lib" -lSDL3
+set /p task="Which task do you want to run (101 or 102)? "
 
-if %errorlevel% neq 0 (
-    echo.
-    echo BUILD FAILED! Fix the errors above.
-    pause
-    exit /b
+:: The paths to your SDL3 folders
+set SDL_INCLUDE="C:\Users\HP\Downloads\SDL3-devel-3.4.2-mingw\SDL3-3.4.2\i686-w64-mingw32\include"
+set SDL_LIB="C:\Users\HP\Downloads\SDL3-devel-3.4.2-mingw\SDL3-3.4.2\i686-w64-mingw32\lib"
+set SDL_BIN="C:\Users\HP\Downloads\SDL3-devel-3.4.2-mingw\SDL3-3.4.2\i686-w64-mingw32\bin"
+
+if "%task%"=="101" (
+    echo Compiling Task 101...
+    gcc Task101.c -o Task101.exe -I%SDL_INCLUDE% -L%SDL_LIB% -lSDL3
+    if %errorlevel% equ 0 (
+        copy %SDL_BIN%\SDL3.dll . >nul
+        Task101.exe
+    )
+) else if "%task%"=="102" (
+    echo Compiling Task 102...
+    gcc Task102.c -o Task102.exe -I%SDL_INCLUDE% -L%SDL_LIB% -lSDL3
+    if %errorlevel% equ 0 (
+        copy %SDL_BIN%\SDL3.dll . >nul
+        Task102.exe
+    )
+) else (
+    echo Task %task% not found!
 )
-
-echo Success! Running program...
-.\main.exe
+pause

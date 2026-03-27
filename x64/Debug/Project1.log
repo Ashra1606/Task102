@@ -1,0 +1,24 @@
+﻿  main.c
+C:\Users\HP\source\repos\Project1\Project1\main.c(4,30): error C2143: syntax error: missing ')' before '*'
+C:\Users\HP\source\repos\Project1\Project1\main.c(4,30): error C2143: syntax error: missing '{' before '*'
+C:\Users\HP\source\repos\Project1\Project1\main.c(4,42): error C2059: syntax error: 'type'
+C:\Users\HP\source\repos\Project1\Project1\main.c(4,78): error C2059: syntax error: ')'
+C:\Users\HP\source\repos\Project1\Project1\main.c(19,2): warning C4013: 'SDL_Init' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(19,11): error C2065: 'SDL_INIT_VIDEO': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(24,2): error C2065: 'SDL_Window': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(24,14): error C2065: 'window': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(24,23): warning C4013: 'SDL_CreateWindow' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(24,12): error C2106: '=': left operand must be l-value
+C:\Users\HP\source\repos\Project1\Project1\main.c(25,2): error C2065: 'SDL_Renderer': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(25,14): error C2297: '*': not valid as right operand has type 'int *'
+C:\Users\HP\source\repos\Project1\Project1\main.c(25,27): warning C4013: 'SDL_CreateRenderer' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(25,46): error C2065: 'window': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(34,2): warning C4013: 'SDL_SetRenderDrawColor' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(36,2): warning C4013: 'SDL_RenderClear' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(41,2): warning C4013: 'drawCircle' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(43,2): warning C4013: 'SDL_RenderPresent' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(45,2): warning C4013: 'SDL_Delay' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(47,2): warning C4013: 'SDL_DestroyRenderer' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(48,2): warning C4013: 'SDL_DestroyWindow' undefined; assuming extern returning int
+C:\Users\HP\source\repos\Project1\Project1\main.c(48,20): error C2065: 'window': undeclared identifier
+C:\Users\HP\source\repos\Project1\Project1\main.c(49,2): warning C4013: 'SDL_Quit' undefined; assuming extern returning int

@@ -1,0 +1,14 @@
+# Ignore the compiled program
+*.exe
+
+# Ignore Visual Studio temporary files
+*.pdb
+*.ilk
+*.obj
+.vscode/
+x64/
+Debug/
+Release/
+
+# Ignore SDL library files (since they can be re-downloaded)
+*.dll
